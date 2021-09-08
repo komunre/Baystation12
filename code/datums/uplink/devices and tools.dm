@@ -17,6 +17,12 @@
 	item_cost = 8
 	path = /obj/item/storage/toolbox/syndicate
 
+/datum/uplink_item/item/tools/payday_bag
+	name = "Payday bag"
+	desc = "Bag that can hold items and one body."
+	item_cost = 20
+	path = /obj/item/storage/payday_bag
+
 /datum/uplink_item/item/tools/ductape
 	name = "Duct Tape"
 	desc = "A roll of duct tape. changes \"HELP\" into sexy \"mmm\"."
