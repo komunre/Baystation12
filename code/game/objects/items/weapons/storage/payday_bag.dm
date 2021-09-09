@@ -13,7 +13,7 @@
 	var/mob/living/stored_body
 
 /obj/item/storage/payday_bag/MouseDrop_T(mob/living/M, mob/living/user)
-	if (stored_body || !istype(M, /mob/living) || M == user)
+	if (stored_body || !istype(M, /mob/living) || M == user || !in_range(M, user))
 		return
 	to_chat(user, SPAN_DANGER("You start to pull [M] into [src]"))
 	if (do_after(user, 2 SECONDS, M))
